@@ -38,5 +38,13 @@
   "Stadium": {
     "dataSource": "mysql_db",
     "public": true
+  },
+  "Floor": {
+    "dataSource": "mysql_db",
+    "public": true
+  },
+  "Parking_Area": {
+    "dataSource": "mysql_db",
+    "public": true
   }
 }

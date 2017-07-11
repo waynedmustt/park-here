@@ -1,0 +1,42 @@
+{
+  "name": "Floor",
+  "plural": "floors",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "foreignKeys": {
+    "stadiumId": {
+      "name": "stadiumId",
+      "foreignKey": "stadiumId",
+      "entityKey": "id",
+      "entity": "Stadium"
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "capacity": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {
+    "stadium": {
+      "type": "belongsTo",
+      "model": "Stadium",
+      "foreignKey": "stadiumId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
