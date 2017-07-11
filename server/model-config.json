@@ -46,5 +46,9 @@
   "Parking_Area": {
     "dataSource": "mysql_db",
     "public": true
+  },
+  "Picture": {
+    "dataSource": "mysql_db",
+    "public": true
   }
 }
