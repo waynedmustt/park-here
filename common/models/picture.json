@@ -1,18 +1,10 @@
 {
-  "name": "Stadium",
-  "plural": "stadiums",
+  "name": "Picture",
+  "plural": "pictures",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
-  },
-  "foreignKeys": {
-    "pictureId": {
-      "name": "pictureId",
-      "foreignKey": "pictureId",
-      "entityKey": "id",
-      "entity": "Picture"
-    }
   },
   "properties": {
     "id": {
@@ -23,19 +15,22 @@
       "type": "string",
       "required": true
     },
-    "address": {
+    "content_type": {
       "type": "string",
       "required": true
+    },
+    "size": {
+      "type": "number",
+      "required": true
+    },
+    "data_picture": {
+      "type": "string",
+      "required": true,
+      "dataType": "longtext"
     }
   },
   "validations": [],
-  "relations": {
-    "picture": {
-      "type": "belongsTo",
-      "model": "Picture",
-      "foreignKey": "pictureId"
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

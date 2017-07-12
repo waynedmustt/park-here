@@ -1,18 +1,10 @@
 {
-  "name": "Stadium",
-  "plural": "stadiums",
+  "name": "User_Booking",
+  "plural": "user-bookings",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
-  },
-  "foreignKeys": {
-    "pictureId": {
-      "name": "pictureId",
-      "foreignKey": "pictureId",
-      "entityKey": "id",
-      "entity": "Picture"
-    }
   },
   "properties": {
     "id": {
@@ -26,16 +18,14 @@
     "address": {
       "type": "string",
       "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],
-  "relations": {
-    "picture": {
-      "type": "belongsTo",
-      "model": "Picture",
-      "foreignKey": "pictureId"
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }
