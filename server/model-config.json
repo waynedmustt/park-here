@@ -14,7 +14,8 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "mysql_db",
+    "public": true
   },
   "AccessToken": {
     "dataSource": "db",
@@ -48,6 +49,22 @@
     "public": true
   },
   "Picture": {
+    "dataSource": "mysql_db",
+    "public": true
+  },
+  "Booking": {
+    "dataSource": "mysql_db",
+    "public": true
+  },
+  "Booking_History": {
+    "dataSource": "mysql_db",
+    "public": true
+  },
+  "User_Booking": {
+    "dataSource": "mysql_db",
+    "public": true
+  },
+  "Ticket": {
     "dataSource": "mysql_db",
     "public": true
   }

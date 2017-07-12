@@ -1,0 +1,49 @@
+{
+  "name": "Booking",
+  "plural": "bookings",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "foreignKeys": {
+    "parkingAreaId": {
+      "name": "parkingAreaId",
+      "foreignKey": "parkingAreaId",
+      "entityKey": "id",
+      "entity": "Parking_Area"
+    },
+    "userId": {
+      "name": "userId",
+      "foreignKey": "userId",
+      "entityKey": "id",
+      "entity": "User_Booking"
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "booked_at": {
+      "type": "date",
+      "required": true,
+      "dateType": "timestamp"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "parking_area": {
+      "type": "belongsTo",
+      "model": "Parking_Area",
+      "foreignKey": "parkingAreaId"
+    },
+    "user_booking": {
+      "type": "belongsTo",
+      "model": "User_Booking",
+      "foreignKey": "userId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

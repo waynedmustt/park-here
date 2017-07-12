@@ -1,6 +1,6 @@
 {
-  "name": "Picture",
-  "plural": "pictures",
+  "name": "User_Booking",
+  "plural": "user-bookings",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -15,18 +15,13 @@
       "type": "string",
       "required": true
     },
-    "content_type": {
+    "address": {
       "type": "string",
       "required": true
     },
-    "size": {
-      "type": "number",
-      "required": true
-    },
-    "data_picture": {
+    "email": {
       "type": "string",
-      "required": true,
-      "dataType": "longtext"
+      "required": true
     }
   },
   "validations": [],

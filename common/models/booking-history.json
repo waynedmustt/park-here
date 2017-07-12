@@ -1,0 +1,33 @@
+{
+  "name": "Booking_History",
+  "plural": "booking-histories",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "foreignKeys": {
+    "bookingId": {
+      "name": "bookingId",
+      "foreignKey": "bookingId",
+      "entityKey": "id",
+      "entity": "Booking"
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "booking": {
+      "type": "belongsTo",
+      "model": "Booking",
+      "foreignKey": "bookingId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
