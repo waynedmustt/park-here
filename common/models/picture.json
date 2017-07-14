@@ -1,5 +1,5 @@
 {
-  "name": "Picture",
+  "name": "picture",
   "plural": "pictures",
   "base": "PersistedModel",
   "idInjection": true,

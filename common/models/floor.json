@@ -1,5 +1,5 @@
 {
-  "name": "Floor",
+  "name": "floor",
   "plural": "floors",
   "base": "PersistedModel",
   "idInjection": true,
@@ -11,7 +11,7 @@
       "name": "stadiumId",
       "foreignKey": "stadiumId",
       "entityKey": "id",
-      "entity": "Stadium"
+      "entity": "stadium"
     }
   },
   "properties": {
@@ -33,7 +33,7 @@
   "relations": {
     "stadium": {
       "type": "belongsTo",
-      "model": "Stadium",
+      "model": "stadium",
       "foreignKey": "stadiumId"
     }
   },

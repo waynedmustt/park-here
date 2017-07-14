@@ -1,5 +1,5 @@
 'use strict';
 
-module.exports = function(Floor) {
+module.exports = function(floor) {
 
 };

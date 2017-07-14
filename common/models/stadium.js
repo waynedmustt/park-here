@@ -1,5 +1,5 @@
 'use strict';
 
-module.exports = function(Stadium) {
+module.exports = function(stadium) {
 
 };

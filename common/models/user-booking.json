@@ -1,5 +1,5 @@
 {
-  "name": "User_Booking",
+  "name": "user_booking",
   "plural": "user-bookings",
   "base": "PersistedModel",
   "idInjection": true,

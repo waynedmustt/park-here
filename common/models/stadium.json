@@ -1,5 +1,5 @@
 {
-  "name": "Stadium",
+  "name": "stadium",
   "plural": "stadiums",
   "base": "PersistedModel",
   "idInjection": true,
@@ -11,7 +11,7 @@
       "name": "pictureId",
       "foreignKey": "pictureId",
       "entityKey": "id",
-      "entity": "Picture"
+      "entity": "picture"
     }
   },
   "properties": {
@@ -32,7 +32,7 @@
   "relations": {
     "picture": {
       "type": "belongsTo",
-      "model": "Picture",
+      "model": "picture",
       "foreignKey": "pictureId"
     }
   },

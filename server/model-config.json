@@ -36,35 +36,35 @@
     "dataSource": "db",
     "public": false
   },
-  "Stadium": {
+  "stadium": {
     "dataSource": "mysql_db",
     "public": true
   },
-  "Floor": {
+  "floor": {
     "dataSource": "mysql_db",
     "public": true
   },
-  "Parking_Area": {
+  "parking_area": {
     "dataSource": "mysql_db",
     "public": true
   },
-  "Picture": {
+  "picture": {
     "dataSource": "mysql_db",
     "public": true
   },
-  "Booking": {
+  "booking": {
     "dataSource": "mysql_db",
     "public": true
   },
-  "Booking_History": {
+  "booking_history": {
     "dataSource": "mysql_db",
     "public": true
   },
-  "User_Booking": {
+  "user_booking": {
     "dataSource": "mysql_db",
     "public": true
   },
-  "Ticket": {
+  "ticket": {
     "dataSource": "mysql_db",
     "public": true
   }

@@ -1,5 +1,5 @@
 {
-  "name": "Booking",
+  "name": "booking",
   "plural": "bookings",
   "base": "PersistedModel",
   "idInjection": true,
@@ -11,13 +11,13 @@
       "name": "parkingAreaId",
       "foreignKey": "parkingAreaId",
       "entityKey": "id",
-      "entity": "Parking_Area"
+      "entity": "parking_area"
     },
     "userId": {
       "name": "userId",
       "foreignKey": "userId",
       "entityKey": "id",
-      "entity": "User_Booking"
+      "entity": "user_booking"
     }
   },
   "properties": {
@@ -35,12 +35,12 @@
   "relations": {
     "parking_area": {
       "type": "belongsTo",
-      "model": "Parking_Area",
+      "model": "parking_area",
       "foreignKey": "parkingAreaId"
     },
     "user_booking": {
       "type": "belongsTo",
-      "model": "User_Booking",
+      "model": "user_booking",
       "foreignKey": "userId"
     }
   },

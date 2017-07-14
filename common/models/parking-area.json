@@ -1,5 +1,5 @@
 {
-  "name": "Parking_Area",
+  "name": "parking_area",
   "plural": "parking-areas",
   "base": "PersistedModel",
   "idInjection": true,
@@ -11,7 +11,7 @@
       "name": "floorId",
       "foreignKey": "floorId",
       "entityKey": "id",
-      "entity": "Floor"
+      "entity": "floor"
     }
   },
   "properties": {
@@ -28,7 +28,7 @@
   "relations": {
     "floor": {
       "type": "belongsTo",
-      "model": "Floor",
+      "model": "floor",
       "foreignKey": "floorId"
     }
   },

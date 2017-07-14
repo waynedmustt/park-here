@@ -1,5 +1,5 @@
 {
-  "name": "Ticket",
+  "name": "ticket",
   "plural": "tickets",
   "base": "PersistedModel",
   "idInjection": true,
@@ -11,7 +11,7 @@
       "name": "bookingId",
       "foreignKey": "bookingId",
       "entityKey": "id",
-      "entity": "Booking"
+      "entity": "booking"
     }
   },
   "properties": {
@@ -24,7 +24,7 @@
   "relations": {
     "booking": {
       "type": "belongsTo",
-      "model": "Booking",
+      "model": "booking",
       "foreignKey": "bookingId"
     }
   },

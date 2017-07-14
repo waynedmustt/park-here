@@ -1,5 +1,5 @@
 'use strict';
 
-module.exports = function(Parkingarea) {
+module.exports = function(parkingarea) {
 
 };
